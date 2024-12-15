@@ -1,0 +1,17 @@
+<section>
+  <div>
+    <swiper-container #swiper>
+      @for (item of slidesContent; track $index) {
+      <swiper-slide>
+        <app-banner-item
+          [bannerItem]="item"
+          [totalSlides]="slidesContent"
+          [currentSlide]="currentSlide"
+          (dotClick)="goToSlide($event)"
+        >
+        </app-banner-item>
+      </swiper-slide>
+      }
+    </swiper-container>
+  </div>
+</section>
