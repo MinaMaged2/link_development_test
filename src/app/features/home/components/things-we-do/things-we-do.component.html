@@ -1,0 +1,31 @@
+<section>
+  <div class="cards">
+    @for (group of groupedItems; track $index) {
+      <div class="cards_container" [style.paddingTop]="120 * $index + 'px'">
+        @for (item of group; track $index) {
+          <div class="card_data">
+            <div class="overlay-background"></div>
+            <img [src]="item.image" [alt]="item.itemTitle">
+            <h3>{{ item.itemTitle }}</h3>
+            <div class="overlay_content">
+              <a href="/">
+                <i class="pi pi-arrow-right"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        }
+      </div>
+    }
+  </div>
+
+  <div class="info">
+    <h2>
+      We Deliver Digital Productivity
+    </h2>
+
+    <p>
+      We craft technology solutions that digitally bond and transform the productivity of our customers and their citizens, workers, consumers and partners.
+    </p>
+  </div>
+</section>
