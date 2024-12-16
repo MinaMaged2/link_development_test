@@ -1,18 +1,33 @@
+@import "../../../../../assets/styles/abstracts/mixins";
+
 section {
   background-color: #efefef;
   padding: 110px 0;
   display: flex;
   margin-bottom: 30px;
-
+  @media (max-width: 991.98px) {
+    flex-wrap: wrap;
+  }
   .cards {
     display: flex;
     flex-direction: row-reverse;
     width: 40%;
     position: relative;
     right: -250px;
+    @media (max-width: 991.98px) {
+      width: 100%;
+      right: 0;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      row-gap: 20px;
+    }
     .cards_container {
       position: relative;
       top: -20px;
+      @media (max-width: 991.98px) {
+        top: 0;
+        padding-top: 0 !important;
+      }
     }
   }
   .info {
@@ -22,9 +37,13 @@ section {
     padding-bottom: 140px;
     background-color: #f215b6;
     width: 60%;
+    @media (max-width: 991.98px) {
+      width: 100%;
+      padding: 50px 25px;
+    }
     h2 {
-      font-size: 55px;
-      line-height: 80px;
+      font-size: px-to-rem(55);
+      line-height:  px-to-rem(80);
       color: #253776;
       text-align: end;
       margin: 0 0 50px;
@@ -32,8 +51,8 @@ section {
 
     p {
       color: #ffffff;
-      font-size: 28px;
-      line-height: 38px;
+      font-size: px-to-rem(28);
+      line-height: px-to-rem(38);
       text-align: end;
       margin: 0;
     }

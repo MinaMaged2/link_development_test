@@ -14,10 +14,10 @@ import { MobileNavbarComponent } from './components/mobile-navbar/mobile-navbar.
 export class HeaderComponent {
   sidebarVisible: boolean = false;
   links: {label: string, url: string}[] = [
-    {label: 'Home', url: '/'},
-    {label: 'About us', url: '/'},
-    {label: 'News', url: '/'},
-    {label: 'Contact us', url: '/'},
+    {label: 'Home', url: 'home'},
+    {label: 'About us', url: 'about'},
+    {label: 'News', url: 'news'},
+    {label: 'Contact us', url: 'footer'},
   ];
   langs: string[] = [
     "EN",

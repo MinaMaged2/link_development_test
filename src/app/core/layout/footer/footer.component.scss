@@ -1,8 +1,12 @@
+@import "../../../../assets/styles/abstracts/mixins";
+
 footer {
   .footer_container {
     display: flex;
     justify-content: space-between;
-
+    @media (max-width: 991.98px) {
+      flex-wrap: wrap;
+    }
     .link_info {
       a {
         img {
@@ -23,8 +27,10 @@ footer {
 
     .links {
       display: flex;
-      gap: 100px;
-
+      gap: px-to-rem(100);
+      @media (max-width: 991.98px) {
+        flex-wrap: wrap;
+      }
       .links_container {
         h3 {
           color: #080809;
@@ -54,6 +60,9 @@ footer {
         align-items: center;
         gap: 25px;
         margin-bottom: 26px;
+        @media (max-width: 991.98px) {
+          flex-wrap: wrap;
+        }
         a {
           color: #080809;
           width: 40px;

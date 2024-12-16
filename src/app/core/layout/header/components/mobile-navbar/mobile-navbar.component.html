@@ -5,7 +5,7 @@
       <ul>
         @for (item of links; track $index) {
         <li>
-          <a [routerLink]="item.url">
+          <a routerLink="/"  [fragment]="item.url">
             {{ item.label }}
           </a>
         </li>

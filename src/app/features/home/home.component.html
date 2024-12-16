@@ -1,7 +1,7 @@
 <section>
   @if (bannersData) {
-    <app-main-banner [slidesContent]="bannersData"></app-main-banner>
+    <app-main-banner id="home" [slidesContent]="bannersData"></app-main-banner>
   }
-  <app-things-we-do></app-things-we-do>
-  <app-news></app-news>
+  <app-things-we-do id="about"></app-things-we-do>
+  <app-news id="news"></app-news>
 </section>

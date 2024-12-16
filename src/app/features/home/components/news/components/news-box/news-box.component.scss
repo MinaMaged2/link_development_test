@@ -1,3 +1,5 @@
+@import "../../../../../../../assets/styles/abstracts/mixins";
+
 .news_card {
   display: flex;
   flex-direction: column;
@@ -9,8 +11,12 @@
   margin-bottom: 48px;
 
   .image {
-    width: 360px;
-    height: 300px;
+    width: px-to-rem(360);
+    height: px-to-rem(300);
+    @media (max-width: 991.98px) {
+      width: 100%;
+      height: 100%;
+    }
     margin-bottom: 27px;
     img {
       width: 100%;

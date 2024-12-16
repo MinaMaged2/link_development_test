@@ -17,10 +17,10 @@ export class MobileNavbarComponent {
   @Output() hideSideBar = new EventEmitter();
   
   links: {label: string, url: string}[] = [
-    {label: 'Home', url: '/'},
-    {label: 'About us', url: '/'},
-    {label: 'News', url: '/'},
-    {label: 'Contact us', url: '/'},
+    {label: 'Home', url: 'home'},
+    {label: 'About us', url: 'about'},
+    {label: 'News', url: 'news'},
+    {label: 'Contact us', url: 'footer'},
   ];
   langs: string[] = [
     "EN",
