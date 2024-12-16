@@ -1,0 +1,26 @@
+
+
+ul, .actions{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  li{
+    text-align: center;
+  }
+  a{
+    color: #000; 
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+.actions{
+  div{
+    text-align: center;
+  }
+}
+
+.show_mobile{
+  flex-direction: column;
+}    
+

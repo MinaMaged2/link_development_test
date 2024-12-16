@@ -8,11 +8,12 @@ import { MainBannerComponent } from './components/main-banner/main-banner.compon
 import { HomeService } from './services/home.service';
 import { Banner } from '../../core/models/banner';
 import { ThingsWeDoComponent } from './components/things-we-do/things-we-do.component';
+import { NewsComponent } from './components/news/news.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MainBannerComponent, ThingsWeDoComponent],
+  imports: [MainBannerComponent, ThingsWeDoComponent, NewsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

@@ -1,0 +1,7 @@
+<div>
+    @if (!isFav) {
+      <span (click)="addFav()" class="pi pi-heart"></span>
+    }@else {
+      <span (click)="removeFav()" class="pi pi-heart-fill"></span>
+    }
+</div>

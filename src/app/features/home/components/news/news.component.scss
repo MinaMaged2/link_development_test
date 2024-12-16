@@ -1,0 +1,90 @@
+section{
+
+  padding: 30px 0;
+
+  .news_container{
+    span{
+      color: #5E6282;
+      font-size: 18px;
+      line-height: 27px;
+      text-align: center;
+      display: block;
+    }
+
+    h2{
+      margin: 0 0 30px;
+      color: #14183E;
+      font-size: 50px;
+      line-height: 67px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .menu-info{
+      margin-bottom: 30px;
+    }
+
+    .load_news{
+      text-align: center;
+      margin-bottom: 30px;
+      button{
+        background-color: #FF7C16;
+        border-radius: 10px;
+        box-shadow: 0px 20px 70px #F1A50126;
+        height: 60px;
+        width: 265px;
+        border: none;
+        color: #FFFFFF;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  ::ng-deep {
+    .p-tabmenu-nav {
+      background: transparent;
+      border: none;
+      padding-bottom: 5px;
+      justify-content: center;
+      gap: 30px;
+      .p-menuitem-link {
+        color: #0F526E;
+        padding: 8px 16px;
+        min-width: 175px;
+        justify-content: center;
+        background: #E3E3E3;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+
+        @media (max-width: 767.98px) {
+          min-width: 120px;
+        }
+
+        @media (max-width: 575.98px) {
+          min-width: auto;
+        }
+
+        .p-menuitem-text {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        &:hover{
+          background: #0ECEFF;
+          border-radius: 10px;
+          color: #fff;
+        }
+      }
+
+      .p-highlight {
+        .p-menuitem-link {
+          background: #0ECEFF;
+          border-radius: 10px;
+          color: #fff;
+        }
+      }
+
+    }
+  }
+}

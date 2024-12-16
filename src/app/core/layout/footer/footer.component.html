@@ -1,1 +1,67 @@
-<p>footer works!</p>
+<footer>
+  <div class="container">
+    <div class="footer_container">
+      <div class="link_info">
+        <a href="#">
+          <img src="assets/imgs/logo.png" alt="link logo">
+        </a>
+        <p>
+          We make technology produce productive, adaptable and sustainable business experiences.
+        </p>
+      </div>
+    
+      <div class="links">
+        @for (linkData of linksData; track $index) {
+          <div class="links_container">
+            <h3>
+              {{linkData.header}}
+            </h3>
+            <ul>
+              @for (item of linkData.links; track $index) {
+                <li>
+                  <a [href]="item.url">{{item.label}}</a>
+                </li>
+              }
+            </ul>
+          </div>
+        }
+      </div>
+    
+      <div class="social_media">
+        <div class="icons">
+          <a href="#">
+            <span class="pi pi-facebook"></span>
+          </a>
+          <a href="#">
+            <span class="pi pi-instagram"></span>
+          </a>
+          <a href="#">
+            <span class="pi pi-twitter"></span>
+          </a>
+        </div>
+  
+        <h4>
+          Discover our app
+        </h4>
+  
+        <div class="apps">
+          <a href="#">
+            <img src="assets/imgs/google-play.png" alt="google play app">
+          </a>
+  
+          <a href="#">
+            <img src="assets/imgs/apple-store.png" alt="apple store app">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rights">
+      <p>
+        All rights reserved&#64;Linkdevelopment.com
+      </p>
+    </div>
+  </div>
+
+
+</footer>

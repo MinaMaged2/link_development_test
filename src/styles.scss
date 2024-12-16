@@ -3,4 +3,20 @@
 
 body{
   background-color: #fff;
+
+
+  .show_mobile {
+    display: none !important;
+    @media (max-width: 991.98px) {
+      display: flex !important;
+    }
+  }
+  
+  .hide_mobile {
+    display: flex !important;
+    @media (max-width: 991.98px) {
+      display: none !important;
+    }
+  }
+  
 }

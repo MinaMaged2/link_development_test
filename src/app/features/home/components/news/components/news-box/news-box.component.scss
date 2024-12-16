@@ -1,0 +1,82 @@
+.news_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0px 16px 26px #00000029;
+  width: fit-content;
+  margin-bottom: 48px;
+
+  .image {
+    width: 360px;
+    height: 300px;
+    margin-bottom: 27px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 24px 24px 0 0;
+    }
+  }
+
+  .card_header,
+  .actions {
+    padding: 0 15px;
+  }
+
+  .card_header {
+    
+    width: 100%;
+    h3{
+      max-width: 360px;
+      color: #5e6282;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 600;
+      height: 71px;
+      overflow: hidden;
+      cursor: pointer;
+      margin: 0;
+    }
+    .date {
+      margin-bottom: 18px;
+      i {
+        color: #13beff;
+      }
+      span {
+        color: #707070;
+        font-size: 16px;
+        line-height: 25px;
+        margin-inline-start: 13px;
+      }
+    }
+
+    
+  }
+
+  .actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 36px;
+
+    & > span{
+      background-color: #74747433;
+      border-radius: 10px;
+      color: #5E6282;
+      font-size: 16px;
+      line-height: 25px;
+      padding: 0 5px;
+    }
+
+    .icons{
+      display: flex;
+      gap: 13px;
+      align-items: center;
+      i{
+        color: #13BEFF;
+        cursor: pointer;
+      }
+    }
+  }
+}

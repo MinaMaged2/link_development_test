@@ -1,0 +1,41 @@
+<section>
+  <div class="container">
+    <div class="news_container">
+      <span>
+        Media
+      </span>
+      <h2>
+        Top News
+      </h2>
+
+      <div class="menu-info">
+        <p-tabMenu [model]="categories" [activeItem]="activeItem" />
+      </div>
+      
+      <div class="news">
+        @if (!isLoading) {
+          <div class="row">
+            @for (item of displayedItems; track $index) {
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <app-news-box [item]="item"></app-news-box>
+              </div>
+            }
+          </div>
+
+          @if (displayedItems.length < newsData.length) {
+            <div class="load_news" >
+              <button (click)="loadMore()">
+                view all news
+              </button>
+            </div>
+          }
+        }@else {
+          <app-loader></app-loader>
+        }
+        
+      </div>
+
+      
+    </div>
+  </div>
+</section>

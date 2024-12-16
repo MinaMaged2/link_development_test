@@ -1,0 +1,29 @@
+<p-sidebar [(visible)]="sidebarVisible" (onHide)="hideSideBar.emit()">
+  <div class="show_mobile">
+    <!-- Navigation Links -->
+    <div class="page_links">
+      <ul>
+        @for (item of links; track $index) {
+        <li>
+          <a [routerLink]="item.url">
+            {{ item.label }}
+          </a>
+        </li>
+        }
+      </ul>
+    </div>
+
+    <div class="actions" >
+      <a routerLink="/"> Login </a>
+
+      <a routerLink="/" class="border-link"> Sign up </a>
+
+      <div>
+        <p-dropdown
+          [options]="langs"
+          [(ngModel)]="selectedLang"
+        />
+      </div>
+    </div>
+  </div>
+</p-sidebar>

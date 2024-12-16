@@ -6,7 +6,7 @@
       </a>
     </div>
 
-    <div class="page_links">
+    <div class="page_links hide_mobile">
       <ul>
         @for (item of links; track $index) {
         <li>
@@ -18,7 +18,7 @@
       </ul>
     </div>
 
-    <div class="actions">
+    <div class="actions hide_mobile" >
       <a routerLink="/"> Login </a>
 
       <a routerLink="/" class="border-link"> Sign up </a>
@@ -30,5 +30,54 @@
         />
       </div>
     </div>
+
+    <div class="show_mobile">
+      <button
+        pButton
+        pRipple
+        class="mobile_nav_menu"
+        (click)="sidebarVisible = true"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="vuesax/linear/menu">
+            <g id="menu">
+              <path
+                id="Vector"
+                d="M3 7H21"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                id="Vector_2"
+                d="M3 12H21"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                id="Vector_3"
+                d="M3 17H21"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
   </div>
 </nav>
+
+
+<app-mobile-navbar
+[sidebarVisible]="sidebarVisible"
+(hideSideBar)="sidebarVisible = false"
+></app-mobile-navbar>

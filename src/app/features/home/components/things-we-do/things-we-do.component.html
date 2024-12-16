@@ -3,17 +3,7 @@
     @for (group of groupedItems; track $index) {
       <div class="cards_container" [style.paddingTop]="120 * $index + 'px'">
         @for (item of group; track $index) {
-          <div class="card_data">
-            <div class="overlay-background"></div>
-            <img [src]="item.image" [alt]="item.itemTitle">
-            <h3>{{ item.itemTitle }}</h3>
-            <div class="overlay_content">
-              <a href="/">
-                <i class="pi pi-arrow-right"></i>
-                Read More
-              </a>
-            </div>
-          </div>
+          <app-card [item]="item"></app-card>
         }
       </div>
     }

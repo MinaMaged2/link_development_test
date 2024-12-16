@@ -1,0 +1,32 @@
+<div class="news_card">
+  <div class="image">
+    <img [src]="item.urlToImage" [alt]="item.title">
+  </div>
+
+  <div class="card_header">
+    <h3>
+      {{item.title}}
+    </h3>
+    <div class="date">
+      <i class="pi pi-calendar"></i>
+      <span>
+        {{item.publishedDate}}
+      </span>
+    </div>
+  </div>
+
+  <div class="actions">
+    <span>
+      {{item.categoryName}}
+    </span>
+    <div class="icons">
+
+      <div>
+        <app-favorite></app-favorite>
+      </div>
+      <span>
+        <i class="pi pi-share-alt"></i>
+      </span>
+    </div>
+  </div>
+</div>

@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { ThingsWeDoCard } from '../../../../core/models/things-we-do-card';
+import { CardComponent } from './components/card/card.component';
 
 @Component({
   selector: 'app-things-we-do',
   standalone: true,
-  imports: [],
+  imports: [CardComponent],
   templateUrl: './things-we-do.component.html',
   styleUrl: './things-we-do.component.scss'
 })
 export class ThingsWeDoComponent implements OnInit{
 
-  cars: any[] = [
+  cars: ThingsWeDoCard[] = [
     {
       itemTitle: "Crafty Mind",
       image: "assets/imgs/things-we-do-3.png",
